@@ -179,9 +179,16 @@ void levels(struct node* root,int c,int &ma)
             ma=c;
 }
 
-void merge(struct node* first,struct node * second,vector<struct node*> headnodes)
+void merge(struct node* first,struct node * second)
 {
-    
+    if (!first) 
+        return second; 
+    if (!second) 
+        return first; 
+    first->data += second->data; 
+    first->left = merge(first->left, second->left); 
+    first->right = merge(first->right, second->right); 
+    return t1; 
 }
 
 int main()
