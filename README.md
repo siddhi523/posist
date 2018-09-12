@@ -4,5 +4,4 @@ Generated a class with all the guven information;
 Create object of that class resulting in generic tree:
 Add child node only if sum of siblings is less than the child of parent node
 For encrypting and decrypting it is muted with a extra string character
-diameter of a tree is nothing but the maximum value of (left_height + right_height + 1) for each node.
 Now for the node which has the maximum value of (left_height + right_height + 1), we find the longest root to leaf path on the left side and similarly on the right side. Finally, we print left side path, root and right side path.
