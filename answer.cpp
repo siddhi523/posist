@@ -1,15 +1,11 @@
-
- 
-
-
 #include <bits/stdc++.h>
 using namespace std;
 
 void input(void);
-class TimeStamp{
+class TimeStamp
+{
     
-    public:
-    
+    public:    
     string date_time;
     
     void put(string date_time1)
@@ -24,7 +20,8 @@ class TimeStamp{
     
 };
 
-struct Data{
+struct Data
+{
   
  int id; 
  string name;
@@ -32,11 +29,12 @@ struct Data{
  
   unordered_set<string> stringSet; 
   stringSet.insert(name); 
-    stringSet.insert(id); 
-    stringSet.insert(value); 
+  stringSet.insert(id); 
+  stringSet.insert(value); 
 };
 
-struct node{
+struct node
+{
   
   TimeStamp Datetime;
   struct Data* data;
@@ -64,7 +62,8 @@ unsigned int unique()
     return rand();
 }
 
-string encrypt(string value){
+string encrypt(string value)
+{
     char key ='H';
     string output = value;
     
